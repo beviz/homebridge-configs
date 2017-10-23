@@ -1,0 +1,11 @@
+version: '2'
+
+services:
+  homebridge:
+    restart: always
+    image: marcoraddatz/homebridge:latest
+    volumes:
+      - ./conf.d:/root/.homebridge
+    ports:
+      - '5353:5353'
+      - '51826:51826'

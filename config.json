@@ -1,0 +1,51 @@
+{
+  "bridge": {
+    "name": "Homebridge",
+    "username": "CC:22:3D:E4:C8:30",
+    "port": 51826,
+    "pin": "134-26-005"
+  },
+  "platforms": [
+    {
+      "platform": "MiAqaraPlatform",
+      "sid": ["f0b429b41b38"],
+      "password": ["ttierhjs33slqhbo"]
+    },
+    {
+	  "platform": "MiPhilipsLightPlatform",
+	  "deviceCfgs": [
+        {
+          "type": "TableLamp2",
+          "ip": "192.168.31.6",
+          "token": "a6943618ae78b7745bf756cebaa4948a",
+          "mainLightName": "living room table lamp",
+          "secondLightName": "living room table lamp amb",
+          "secondLightDisable": false,
+          "eyecareSwitchName": "living room table lamp eyecare model",
+          "eyecareSwitchDisable": false
+		}
+	  ]
+    },
+	{
+	  "platform": "ChuangmiIRPlatform",
+	  "deviceCfgs": [
+	    {
+	      "type": "Switch",
+          "ip": "192.168.31.107",
+	  	  "token": "1bd69d33dfc9f1c72457b82836aef00d",
+          "Name": "IR Swtich",
+		  "data": {
+          }
+		}
+	  ]
+	},
+    {
+      "platform" : "XiaomiMiio",
+      "name" : "XiaomiMiio",
+      "pollChanges": true,
+      "pollInterval": 15,
+      "searchInterval": 1800
+    }
+  ]
+}
+
