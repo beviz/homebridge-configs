@@ -1,0 +1,3 @@
+# homebridge-configs
+
+for myself
